@@ -42,3 +42,11 @@ Texture Render Target 2D を指定します。
 <img src="img/img_generated_sdf_r.png" width="300"><img src="img/img_generated_sdf_g.png" width="300">
 </p>
 
+## SDFテクスチャの保存
+Render Target 2Dは上書きされてしまうため右クリックから
+
+「スタティックテクスチャを作成」
+
+で保存することをおすすめします。
+
+<img src="img/img_save_static_texture.png" width="300">
