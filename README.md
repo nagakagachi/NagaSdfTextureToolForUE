@@ -1,31 +1,32 @@
 # SDF Generator for Unreal Engine
+マスク画像からSDF画像を生成するUEの Editor Utility Widget　ツールです.
 
-UEの Editor Utility Widget としてマスク画像からSDF画像を生成するツールです。
-Jump FloodingをマテリアルでGPU実行しています。
+UEマテリアルを利用して Jump Flooding アルゴリズムをGPUで実行しています.
 
 </br>
 
+## 使い方
 Editor Utility Widget である EUW_GenerateSDF をコンテキストメニューから実行
 
-Src Texture 2D に入力となるTexture2Dを指定。
+Src Texture 2D に入力となるTexture2Dを指定.
 
-Dst Render Target に結果のSDFを出力するTexture Render Target 2Dを指定。
+Dst Render Target に結果のSDFを出力するTexture Render Target 2Dを指定.
 
-Generateボタンを押すとSDFが計算されます。
+Generateボタンを押すとSDFが計算されます.
 
 <img src="img/img_widget.png" width="512">
 
 ## 入力データ
-入力テクスチャには縦横サイズが2の冪乗で正方形のものを指定します。
+入力テクスチャには縦横サイズが2の冪乗で正方形のものを指定します.
 
 テクセルが黒(RGB=0,0,0)の場合は外部, 黒ではない場合は内部としてSDFが計算されます.
 
 <img src="img/img_generated_sdf_src.png" width="300">
 
 ## 出力データ
-Texture Render Target 2D を指定します。
+Texture Render Target 2D を指定します.
 
-フォーマットはRGコンポーネントがあり, float形式のものを要求します。
+フォーマットはRGコンポーネントがあり, float形式のものを要求します.
 
 例: RGBA16F
 
@@ -47,6 +48,18 @@ Render Target 2Dは上書きされてしまうため右クリックから
 
 「スタティックテクスチャを作成」
 
-で保存することをおすすめします。
+で保存することをおすすめします.
 
 <img src="img/img_save_static_texture.png" width="300">
+
+
+## Implementation Detail
+Jump FloodingをUEマテリアルで実装することでGPU実行による高速化を意図しています.
+
+マテリアルは M_JumpFlood_Itr_Signed 等が該当します.
+
+Jump Floodingのセットアップや反復処理は BPFL_GenerateSDF に実装されています.
+
+<img src="img/img_material.png" width="500">
+
+
