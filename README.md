@@ -14,6 +14,7 @@ Dst Render Target に結果のSDFを出力するTexture Render Target 2Dを指�
 
 Generateボタンを押すとSDFが計算されます.
 
+
 <img src="img/img_widget.png" width="512">
 
 ## 入力データ
@@ -62,4 +63,6 @@ Jump Floodingのセットアップや反復処理は BPFL_GenerateSDF に実装�
 
 <img src="img/img_material.png" width="500">
 
+## メモ
+二の冪乗かつ正方形サイズ以外では正しく動作しないかもしれませんが対応検討中です
 
