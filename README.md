@@ -34,7 +34,8 @@ Generateボタンを押すとSDFが計算されます.
 ## 入力データ
 入力テクスチャには縦横サイズが2の冪乗で正方形のものを指定します.
 
-テクセルが黒(RGB=0,0,0)の場合は外部, 黒ではない場合は内部としてSDFが計算されます.
+SDFの元としての二値化は, Inner Mask Threshold や Inner Mask Ignore R 等の設定を元に決定されます.
+デフォルトでは完全な黒が外部, そうでない場所が内部という扱いでSDFが計算されます.
 
 <img src="img/img_generated_sdf_src.png" width="300">
 
