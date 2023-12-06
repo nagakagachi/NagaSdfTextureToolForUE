@@ -25,7 +25,7 @@ Dst Render Target に結果のSDFを出力するTexture Render Target 2Dを指�
 
 Generateボタンを押すとSDFが計算されます.
 
-<img src="img/img_widget.png" width="512">
+<img src="img/img_widget.png" width="700">
 
 #### その他機能
 - Inner Mask Threshold
@@ -110,9 +110,9 @@ AddボタンとRemoveボタンによって入力連番テクスチャ項目を�
 
 Target Texture 2D に結果のThreshold Mapを出力するTexture Render Target 2Dを指定します.
 
-Generateボタンを押すとSDFが計算されます.
+Generateボタンを押すとグラデーション画像が結果のTexture Render Target 2Dに出力されます.
 
-<img src="img/shadow_threshold_map_widget.png" width="512">
+<img src="img/shadow_threshold_map_widget.png" width="800">
 
 #### その他機能
 - Inner Mask Threshold
