@@ -98,7 +98,7 @@ EUW_GenerateShadowThresholdMap というEditor Utility Widgetがツール本体�
 
 白い領域が徐々に広がるような連番画像を入力として, SDFを利用した補間によって1枚のグラデーション画像を生成します.
 
-このグラデーション画像は "Shadow Threshold Map" や "Face Threshold Map" 等とも呼ばれ, 
+このグラデーション画像は "Shadow Threshold Map" や "Face Threshold Map", "Face Shadow Map" 等とも呼ばれ, 
 Toonレンダリングでのキャラクターの顔の陰制御などに用いられることもあります.
 
 参考) Hi-Fi RUSH https://cgworld.jp/article/202306-hifirush01.html
