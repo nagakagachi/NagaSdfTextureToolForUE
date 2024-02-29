@@ -58,11 +58,11 @@ Texture Render Target 2D を指定します.
 
 例: RGBA16F
 
-結果のSDFは
+出力されるSDFは
 
-- Rチャンネル : 幅と高さの大きい方で正規化された距離
+- Rチャンネル : 内部テクセル境界からの距離を幅と高さの大きい方で正規化した値. 内部テクセル境界で0.0.
 
-- Gチャンネル : 内部テクセルの場合に非ゼロ
+- Gチャンネル : 距離が負の場合に非ゼロ. 内部マスクと等価.
 
 となります.
 
@@ -70,6 +70,9 @@ Texture Render Target 2D を指定します.
 <img src="img/img_generated_sdf_rg.png" width="300">
 <img src="img/img_generated_sdf_r.png" width="300">
 <img src="img/img_generated_sdf_g.png" width="300">
+</p>
+<p>
+<img src="img/img_generated_sdf_bound.png">
 </p>
 
 ### SDFテクスチャの保存
