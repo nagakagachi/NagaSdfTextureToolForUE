@@ -9,6 +9,8 @@ UE上で入力画像からSDF画像を生成する機能を中心とした, 幾�
   - EUW_GenerateShadowThresholdMap
   - 白領域が徐々に広がるような連番画像を, SDFベースで補間して1枚のグラデーション画像(Shadow Threshold Map)を生成します.
   - Toonレンダリングの顔の陰制御などに利用される Face Threshold Map 等とも呼称されるものなります.
+  - 仕組みの解説はこちら
+    - https://nagakagachi.hatenablog.com/entry/2024/03/02/140704
 
 <a id="anchor_SdfGenerateTool"></a>
 # SDF生成ツール
